@@ -43,13 +43,10 @@ z-index: 1000;
   margin: auto;
 }
 
-<<<<<<< HEAD
 .hero {
   padding: 80px 20px;
 }
 
-=======
->>>>>>> 0bf907d031a0631e28bb0c1b61b3bc503c547911
 .hero h1 {
   font-size: 3.2rem;
   font-weight: 700;
@@ -73,12 +70,7 @@ z-index: 1000;
 }
 
 .section {
-<<<<<<< HEAD
   padding: 40px 20px;
-=======
-  padding: 100px 20px;
-  text-align: center;
->>>>>>> 0bf907d031a0631e28bb0c1b61b3bc503c547911
 }
 
 .product-card {
@@ -92,11 +84,7 @@ z-index: 1000;
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-<<<<<<< HEAD
   gap: 15px;
-=======
-  gap: 20px;
->>>>>>> 0bf907d031a0631e28bb0c1b61b3bc503c547911
   margin-top: 40px;
 }
 
@@ -107,7 +95,6 @@ z-index: 1000;
 }
 
 .pricing-box {
-<<<<<<< HEAD
   background: rgba(255, 255, 255, 0.05);
   padding: 25px 30px;
   border-radius: 15px;
@@ -142,13 +129,6 @@ z-index: 1000;
 
 .price-right .buy-btn:hover {
   transform: translateY(-3px);
-=======
-  background: var(--card);
-  padding: 40px;
-  border-radius: 12px;
-  max-width: 300px;
-  margin: 30px auto;
->>>>>>> 0bf907d031a0631e28bb0c1b61b3bc503c547911
 }
 
 .buy-btn {
@@ -261,11 +241,72 @@ footer {
 .section.show {
   opacity: 1;
   transform: translateY(0);
-<<<<<<< HEAD
 }
 
 .pricing-box p {
   margin-bottom: 20px;
-=======
->>>>>>> 0bf907d031a0631e28bb0c1b61b3bc503c547911
+}
+
+/* ===== PRODUCT SECTION ===== */
+
+.product-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.product-preview img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.product-card {
+  max-width: 450px;
+}
+
+.tagline {
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.features-list li {
+  margin-bottom: 10px;
+}
+
+.price-box h3 {
+  font-size: 28px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  opacity: 0.5;
+  margin-left: 10px;
+}
+
+.buy-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 28px;
+  background: #5a6cff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  background: #4254e6;
 }
