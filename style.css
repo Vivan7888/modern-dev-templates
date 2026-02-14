@@ -43,10 +43,13 @@ z-index: 1000;
   margin: auto;
 }
 
+<<<<<<< HEAD
 .hero {
   padding: 80px 20px;
 }
 
+=======
+>>>>>>> 0bf907d031a0631e28bb0c1b61b3bc503c547911
 .hero h1 {
   font-size: 3.2rem;
   font-weight: 700;
@@ -70,7 +73,12 @@ z-index: 1000;
 }
 
 .section {
+<<<<<<< HEAD
   padding: 40px 20px;
+=======
+  padding: 100px 20px;
+  text-align: center;
+>>>>>>> 0bf907d031a0631e28bb0c1b61b3bc503c547911
 }
 
 .product-card {
@@ -84,7 +92,11 @@ z-index: 1000;
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+<<<<<<< HEAD
   gap: 15px;
+=======
+  gap: 20px;
+>>>>>>> 0bf907d031a0631e28bb0c1b61b3bc503c547911
   margin-top: 40px;
 }
 
@@ -95,6 +107,7 @@ z-index: 1000;
 }
 
 .pricing-box {
+<<<<<<< HEAD
   background: rgba(255, 255, 255, 0.05);
   padding: 25px 30px;
   border-radius: 15px;
@@ -129,6 +142,13 @@ z-index: 1000;
 
 .price-right .buy-btn:hover {
   transform: translateY(-3px);
+=======
+  background: var(--card);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 300px;
+  margin: 30px auto;
+>>>>>>> 0bf907d031a0631e28bb0c1b61b3bc503c547911
 }
 
 .buy-btn {
@@ -241,8 +261,11 @@ footer {
 .section.show {
   opacity: 1;
   transform: translateY(0);
+<<<<<<< HEAD
 }
 
 .pricing-box p {
   margin-bottom: 20px;
+=======
+>>>>>>> 0bf907d031a0631e28bb0c1b61b3bc503c547911
 }
