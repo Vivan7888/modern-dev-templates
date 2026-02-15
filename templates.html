@@ -3,249 +3,213 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Templates — Modern Dev Templates</title>
+<title>Templates – Modern Dev Templates</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
 body{
-  margin:0;
-  font-family:Inter;
-  background:linear-gradient(135deg,#0f172a,#020617);
-  color:white;
+margin:0;
+font-family:Inter, sans-serif;
+background:linear-gradient(135deg,#0f172a,#020617);
+color:white;
 }
 
-/* NAVBAR */
-
 .navbar{
-  display:flex;
-  justify-content:space-between;
-  padding:20px 40px;
-  background:rgba(0,0,0,0.3);
+display:flex;
+justify-content:space-between;
+padding:20px 40px;
+background:rgba(0,0,0,0.3);
 }
 
 .logo{
-  font-weight:700;
-  font-size:20px;
+font-weight:700;
+font-size:20px;
 }
 
-.navbar a{
-  color:white;
-  text-decoration:none;
-  margin-left:20px;
+.back-btn{
+color:white;
+text-decoration:none;
+opacity:0.8;
 }
 
-/* PAGE */
+.back-btn:hover{
+opacity:1;
+}
 
 .container{
-  max-width:1200px;
-  margin:auto;
-  padding:60px 20px;
+max-width:1200px;
+margin:auto;
+padding:40px 20px;
 }
 
 .title{
-  text-align:center;
-  font-size:36px;
-  margin-bottom:40px;
+font-size:36px;
+margin-bottom:10px;
 }
 
-/* GRID */
+.subtitle{
+opacity:0.7;
+margin-bottom:40px;
+}
 
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
 }
 
-/* CARD */
-
 .card{
-  background:#0f172a;
-  border-radius:12px;
-  overflow:hidden;
-  transition:0.3s;
+background:rgba(255,255,255,0.05);
+border-radius:12px;
+overflow:hidden;
+transition:0.3s;
 }
 
 .card:hover{
-  transform:translateY(-5px);
+transform:translateY(-5px);
+background:rgba(255,255,255,0.08);
 }
 
 .card img{
-  width:100%;
+width:100%;
+display:block;
 }
 
 .card-content{
-  padding:20px;
+padding:20px;
 }
 
 .card h3{
-  margin:0 0 10px 0;
+margin:0 0 10px 0;
+}
+
+.card p{
+opacity:0.7;
+font-size:14px;
 }
 
 .price{
-  font-size:20px;
-  font-weight:600;
+margin-top:15px;
+font-size:20px;
+font-weight:600;
 }
 
-.old{
-  text-decoration:line-through;
-  color:gray;
-  font-size:14px;
+.buy-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#6366f1;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:600;
 }
 
-.buy{
-  display:block;
-  margin-top:15px;
-  text-align:center;
-  background:#6366f1;
-  padding:12px;
-  border-radius:8px;
-  color:white;
-  text-decoration:none;
-  font-weight:600;
+.buy-btn:hover{
+background:#4f46e5;
 }
 
-.buy:hover{
-  background:#4f46e5;
+footer{
+text-align:center;
+padding:30px;
+opacity:0.5;
+margin-top:40px;
 }
 
 </style>
-
 </head>
+
 <body>
 
-
 <header class="navbar">
-
 <div class="logo">Modern Dev Templates</div>
-
-<nav>
-<a href="index.html">Home</a>
-</nav>
-
+<a href="index.html" class="back-btn">← Back to Home</a>
 </header>
-
 
 <div class="container">
 
 <h1 class="title">All Templates</h1>
-
+<p class="subtitle">Choose a template and download instantly after purchase.</p>
 
 <div class="grid">
 
 
-<!-- TEMPLATE 1 -->
-
+<!-- DevFolio Pro -->
 <div class="card">
-
-<img src="preview.jpg">
-
 <div class="card-content">
-
-<h3>Minimal Portfolio</h3>
-
-<div class="price">
-₹299 <span class="old">₹599</span>
-</div>
-
-<a href="https://morderntemplates6.gumroad.com/l/wmmjmu"
+<h3>DevFolio Pro</h3>
+<p>Professional developer portfolio with modern layout and responsive design.</p>
+<div class="price">$5</div>
+<a href="morderntemplates6.gumroad.com/l/ttcywb"
 target="_blank"
-class="buy">
-
-Buy Template
-
-</a>
-
+class="buy-btn">Buy Now</a>
 </div>
 </div>
 
 
-
-<!-- TEMPLATE 2 -->
-
+<!-- Freelancer Folio -->
 <div class="card">
-
-<img src="preview.jpg">
-
 <div class="card-content">
-
-<h3>Developer Portfolio Pro</h3>
-
-<div class="price">
-₹399 <span class="old">₹799</span>
-</div>
-
-<a href="https://morderntemplates6.gumroad.com/l/wmmjmu"
+<h3>Freelancer Folio</h3>
+<p>Bright and creative portfolio template for freelancers and designers.</p>
+<div class="price">$5</div>
+<a href="morderntemplates6.gumroad.com/l/icqrez"
 target="_blank"
-class="buy">
-
-Buy Template
-
-</a>
-
+class="buy-btn">Buy Now</a>
 </div>
 </div>
 
 
-
-<!-- TEMPLATE 3 -->
-
+<!-- Startup Launch -->
 <div class="card">
-
-<img src="preview.jpg">
-
+<img src="images/startup-preview.jpg">
 <div class="card-content">
-
-<h3>Agency Landing Page</h3>
-
-<div class="price">
-₹499 <span class="old">₹999</span>
-</div>
-
-<a href="https://morderntemplates6.gumroad.com/l/wmmjmu"
+<h3>Startup Launch</h3>
+<p>Landing page template for startups, SaaS products and new businesses.</p>
+<div class="price">$5</div>
+<a href="https://moderntemplates6.gumroad.com/l/hxyfo"
 target="_blank"
-class="buy">
-
-Buy Template
-
-</a>
-
+class="buy-btn">Buy Now</a>
 </div>
 </div>
 
 
-
-<!-- TEMPLATE 4 -->
-
+<!-- Agency Pro -->
 <div class="card">
-
-<img src="preview.jpg">
-
+<img src="images/agency-preview.jpg">
 <div class="card-content">
-
-<h3>Startup Landing Page</h3>
-
-<div class="price">
-₹349 <span class="old">₹699</span>
-</div>
-
-<a href="https://morderntemplates6.gumroad.com/l/wmmjmu"
+<h3>Agency Pro</h3>
+<p>Modern template for agencies to showcase services and portfolio.</p>
+<div class="price">$5</div>
+<a href="https://moderntemplates6.gumroad.com/l/xiqwzf"
 target="_blank"
-class="buy">
-
-Buy Template
-
-</a>
-
+class="buy-btn">Buy Now</a>
 </div>
 </div>
 
 
+<!-- Creator Site -->
+<div class="card">
+<img src="images/creator-preview.jpg">
+<div class="card-content">
+<h3>Creator Site</h3>
+<p>Perfect template for creators, YouTubers and personal brands.</p>
+<div class="price">$5</div>
+<a href="https://moderntemplates6.gumroad.com/l/cqnzs"
+target="_blank"
+class="buy-btn">Buy Now</a>
+</div>
+</div>
+
 
 </div>
 </div>
 
+<footer>
+© 2026 Modern Dev Templates
+</footer>
 
 </body>
 </html>
