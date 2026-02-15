@@ -3,47 +3,249 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Templates - Modern Dev Templates</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<title>Templates — Modern Dev Templates</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+  margin:0;
+  font-family:Inter;
+  background:linear-gradient(135deg,#0f172a,#020617);
+  color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 40px;
+  background:rgba(0,0,0,0.3);
+}
+
+.logo{
+  font-weight:700;
+  font-size:20px;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+}
+
+/* PAGE */
+
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+.title{
+  text-align:center;
+  font-size:36px;
+  margin-bottom:40px;
+}
+
+/* GRID */
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+/* CARD */
+
+.card{
+  background:#0f172a;
+  border-radius:12px;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card img{
+  width:100%;
+}
+
+.card-content{
+  padding:20px;
+}
+
+.card h3{
+  margin:0 0 10px 0;
+}
+
+.price{
+  font-size:20px;
+  font-weight:600;
+}
+
+.old{
+  text-decoration:line-through;
+  color:gray;
+  font-size:14px;
+}
+
+.buy{
+  display:block;
+  margin-top:15px;
+  text-align:center;
+  background:#6366f1;
+  padding:12px;
+  border-radius:8px;
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.buy:hover{
+  background:#4f46e5;
+}
+
+</style>
+
+</head>
 <body>
 
+
 <header class="navbar">
+
 <div class="logo">Modern Dev Templates</div>
+
+<nav>
 <a href="index.html">Home</a>
+</nav>
+
 </header>
 
-<section class="section">
-<h1>Choose Your Template</h1>
 
-<div class="templates-grid">
+<div class="container">
 
-<div class="template-card">
+<h1 class="title">All Templates</h1>
+
+
+<div class="grid">
+
+
+<!-- TEMPLATE 1 -->
+
+<div class="card">
+
 <img src="preview.jpg">
-<h3>Portfolio Template</h3>
-<p>₹299</p>
 
-<a href="https://morderntemplates6.gumroad.com/l/wmmjmu" target="_blank" class="buy-btn">
-Buy Now
+<div class="card-content">
+
+<h3>Minimal Portfolio</h3>
+
+<div class="price">
+₹299 <span class="old">₹599</span>
+</div>
+
+<a href="https://morderntemplates6.gumroad.com/l/wmmjmu"
+target="_blank"
+class="buy">
+
+Buy Template
+
 </a>
 
 </div>
+</div>
 
-<div class="template-card">
-<img src="preview2.jpg">
-<h3>Business Template</h3>
-<p>₹399</p>
 
-<a href="https://morderntemplates6.gumroad.com/l/wmmjmu" target="_blank" class="buy-btn">
-Buy Now
+
+<!-- TEMPLATE 2 -->
+
+<div class="card">
+
+<img src="preview.jpg">
+
+<div class="card-content">
+
+<h3>Developer Portfolio Pro</h3>
+
+<div class="price">
+₹399 <span class="old">₹799</span>
+</div>
+
+<a href="https://morderntemplates6.gumroad.com/l/wmmjmu"
+target="_blank"
+class="buy">
+
+Buy Template
+
 </a>
 
 </div>
-
 </div>
 
-</section>
+
+
+<!-- TEMPLATE 3 -->
+
+<div class="card">
+
+<img src="preview.jpg">
+
+<div class="card-content">
+
+<h3>Agency Landing Page</h3>
+
+<div class="price">
+₹499 <span class="old">₹999</span>
+</div>
+
+<a href="https://morderntemplates6.gumroad.com/l/wmmjmu"
+target="_blank"
+class="buy">
+
+Buy Template
+
+</a>
+
+</div>
+</div>
+
+
+
+<!-- TEMPLATE 4 -->
+
+<div class="card">
+
+<img src="preview.jpg">
+
+<div class="card-content">
+
+<h3>Startup Landing Page</h3>
+
+<div class="price">
+₹349 <span class="old">₹699</span>
+</div>
+
+<a href="https://morderntemplates6.gumroad.com/l/wmmjmu"
+target="_blank"
+class="buy">
+
+Buy Template
+
+</a>
+
+</div>
+</div>
+
+
+
+</div>
+</div>
+
 
 </body>
 </html>
